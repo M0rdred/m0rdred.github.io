@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Miből lesz a cserebogár?</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="css/juxtapose.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <!-- favicons -->
+    <link rel="icon" type="image/png" href="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/home-512.png" sizes="32x32">
+    <meta name="theme-color" content="#ffffff">
+    <!-- /favicons -->
+	
+	<style>
+	.container {
+		width: 99%;
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+	
+	h1 {
+		font-weight: bold;
+		text-align: center;
+	}
+	</style>
+	
+	</head>
+
+<body>
+	<div id="loader" class="center"></div>
+	<div class="container">
+		<h1>Na miből lett a cserebogár?</h1>
+
+		<div class="juxtapose" id="slider">
+
+		</div>
+	</div>
+
+    <script src='js/juxtapose.js'></script>
+    <script src='js/loader.js'></script>
+</body>
+
+<script>
+      slider = new juxtapose.JXSlider('#slider', [{
+        src: 'pic/20200511.jpg',
+        label: '2020.05.11.'
+    }, {
+        src: 'pic/20210524.jpg',
+        label: '2021.05.24.'
+    }], {
+        animate: true,
+        showLabels: true,
+        showCredits: true,
+        startingPosition: "25%",
+        makeResponsive: true
+    });
+</script>
